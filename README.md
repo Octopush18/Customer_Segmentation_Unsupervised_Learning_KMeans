@@ -28,3 +28,33 @@ This project reads customer data from a CSV file, preprocesses it, and performs 
 Install dependencies using the following command:
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
+
+## Code Explanation
+
+The code performs the following steps:
+
+1. Imports necessary libraries: pandas, numpy, matplotlib, seaborn, and os.
+2. Reads the customer data from "Mall_Customers.csv".
+3. Renames the "Genre" column to "Gender".
+4. Checks for missing values.
+5. Generates various visualizations to explore the data.
+6. Determines the optimal number of clusters using the Elbow Method for K-means.
+7. Performs K-means clustering on different combinations of features (age vs. spending score, income vs. spending score, and all features).
+8. Visualizes the clusters in 2D and 3D space.
+
+## Results
+
+The code outputs the labels assigned to each customer based on the clusters. It also displays the cluster centers for each feature combination.
+
+## Visualizations
+
+The code generates multiple visualizations including:
+
+- Distribution plots for age, annual income, and spending score.
+- Count plot for gender distribution.
+- Bar plots for age groups, spending score ranges, and annual income ranges.
+- Elbow plots to determine the optimal number of clusters.
+- Scatter plots to visualize the clusters in 2D and 3D space.
+
+For 3D visualization, clusters are represented in different colors.
+
