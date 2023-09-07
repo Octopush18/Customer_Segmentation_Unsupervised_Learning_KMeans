@@ -26,7 +26,6 @@ This project reads customer data from a CSV file, preprocesses it, and performs 
 - scikit-learn
 
 Install dependencies using the following command:
-```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 
 ## Code Explanation
