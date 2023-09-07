@@ -1,6 +1,6 @@
-# Customer Segmentation Code
+# Customer Segmentation
 
-This code performs customer segmentation based on features such as age, annual income, and spending score. It utilizes the K-means clustering algorithm to group customers into distinct segments.
+This Python script performs customer segmentation based on features such as age, annual income, and spending score. It utilizes the K-means clustering algorithm to group customers into distinct segments.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -11,30 +11,33 @@ This code performs customer segmentation based on features such as age, annual i
 - [Visualizations](#visualizations)
 
 ## Overview
-This project reads customer data from a CSV file, preprocesses it, and performs customer segmentation using K-means clustering. It provides insights into customer groups based on age, annual income, and spending score.
+
+Customer segmentation is a crucial task in marketing and business analysis. This script aims to cluster customers into groups based on their age, annual income, and spending score.
 
 ## Usage
-1. Make sure you have the required dependencies installed (see [Dependencies](#dependencies)).
-2. Download the `Mall_Customers.csv` file and place it in the same directory as this script.
-3. Execute the code in your preferred Python environment.
+
+1. Ensure you have Python installed on your system.
+2. Install the required dependencies using the following command:
+
+pip install pandas numpy matplotlib seaborn scikit-learn
+
+3. Run the script using a Python environment.
 
 ## Dependencies
+
 - pandas
 - numpy
 - matplotlib
 - seaborn
 - scikit-learn
 
-Install dependencies using the following command:
-pip install pandas numpy matplotlib seaborn scikit-learn
-
 ## Code Explanation
 
 The code performs the following steps:
 
-1. Imports necessary libraries: pandas, numpy, matplotlib, seaborn, and os.
-2. Reads the customer data from "Mall_Customers.csv".
-3. Renames the "Genre" column to "Gender".
+1. Imports necessary libraries: pandas, numpy, matplotlib, seaborn.
+2. Loads the customer data from "Mall_Customers.csv".
+3. Renames the 'Genre' column to 'Gender'.
 4. Checks for missing values.
 5. Generates various visualizations to explore the data.
 6. Determines the optimal number of clusters using the Elbow Method for K-means.
@@ -55,5 +58,8 @@ The code generates multiple visualizations including:
 - Elbow plots to determine the optimal number of clusters.
 - Scatter plots to visualize the clusters in 2D and 3D space.
 
-For 3D visualization, clusters are represented in different colors.
+For the 3D visualization, clusters are represented in different colors.
 
+---
+
+For any further details, refer to the [cleaned-up code](cleaned_up_code.py).
