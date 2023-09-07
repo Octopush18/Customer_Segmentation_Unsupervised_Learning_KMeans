@@ -61,5 +61,3 @@ The code generates multiple visualizations including:
 For the 3D visualization, clusters are represented in different colors.
 
 ---
-
-For any further details, refer to the [cleaned-up code](cleaned_up_code.py).
